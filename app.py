@@ -81,7 +81,11 @@ def set_persistent_menu():
 				"type":"web_url",
 				"title":"Meet the developer",
 				"url":"https://github.com/amitbht"
-			},
+			},{
+				"type":"postback",
+				"title":"Help",
+				"payload":"SHOW_HELP"
+			}
 		]
 		}
 	ENDPOINT = "https://graph.facebook.com/v2.8/me/thread_settings?access_token=%s"%(FB_ACCESS_TOKEN)
